@@ -1,0 +1,173 @@
+@use './partials/global';
+
+p {
+    font-size: 1.125rem;
+    font-weight:400;
+}
+
+.image {
+    min-height: 240px;
+    max-height: 550px;
+    padding: 20px;
+    margin: auto;
+}
+
+.hero-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.25rem;
+}
+
+.hero-header {
+    display: inline-block;
+    width: 30%;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+button {
+    display: block;
+    position: relative;;
+    background-color: #5BACC3;
+    border: 2px #393939 solid;
+    color: white;
+    font-size: 1.3125rem;
+    font-family: 400;
+    min-width: 11.25rem;
+    padding: 1.25rem;
+    margin: 1.25rem auto;
+}
+
+.products-box {
+    background-color: #F7F7F7;   
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.products-card {
+    display: inline-block;
+    overflow: auto;
+    background-color: #FFF;
+    min-width: 330px;
+    max-width: 350px;
+    min-height: 440px;
+    max-height: 460px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    vertical-align: top;
+}
+
+.products-card__description-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFF0ED;
+    padding-bottom: 5px;
+}
+
+.products-card__description-quantity {
+    color: #909090;
+    text-align: left;
+}
+
+.discount-container {
+    background-color: #FFF;
+    padding: 1.25rem;
+}
+
+.discount__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+}
+
+.discount__top__learn-more-container {
+    width: 40%;
+}
+
+.discount__top__learn-more__images-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount__top__learn-more-image-right {
+    display: flex;
+    background-image: url(/assets/images/coldbrewbackground.png);
+    background-position: center;
+    background-size: cover;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.discount-bottom {
+    background-color: #393939;
+    max-width: 90%;
+    padding: 1.25rem;
+    margin: 2.5rem;
+}
+
+.discount__font {
+    color: white;
+    font-size: 2.8125rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.discount__font--bold {
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-card {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.can-tilted:hover {
+    animation: spin 2s linear infinite;
+}
+
+.can-tilted {
+    padding: 20px 130px;
+}
+
+@keyframes flashing {
+    0% {
+        background-color: #393939;
+    }
+    50% {
+        background-color: #5BACC3;
+    }
+    100% {
+        background-color: #393939;
+    }
+}
+
+.discount-bottom {
+    animation: flashing 2.5s linear infinite;
+}
+
+button:active {
+    transform: translate(10px,10px);
+}

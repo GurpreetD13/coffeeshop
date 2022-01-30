@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-color: #FFF0ED;
+    color: #393939;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.logo-size {
+    min-width: 50px;
+    max-width: 240px;
+}
+
+.icon-size {
+    max-width: 50px;
+}
+
+a {
+    color: #393939;
+    font-size: 1.3125rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+li  {
+    list-style-type: none;
+}
+
+h1, h2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2.0625rem;
+    font-weight: 300;
+}
+
+.nav-heading {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #FFF0ED;
+    text-decoration-color: #393939;
+    padding: 1.25rem;
+    margin: 0;
+}
+
+.nav-bar__text {
+    padding: 1.25rem;
+}
+
+.nitro-blue {
+    color:#5BACC3;
+}
+
+.price-font {
+    color:#5BACC3;
+    font-size: 1.125rem;
+    font-weight:400;
+    font-style: normal;
+}
